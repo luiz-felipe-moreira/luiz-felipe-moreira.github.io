@@ -57,7 +57,7 @@ img.anotacaoOrigem { /*vertical-align:top;*/
 .ementa,.ementa * {
 	display: block;
 	margin: 0 0 0 auto;
-	width: 9cm;
+	width: 7cm; /*alterado*/
 	font-size: 9pt;
 	text-align: justify;
 	padding: 24pt 0 24pt 0;
