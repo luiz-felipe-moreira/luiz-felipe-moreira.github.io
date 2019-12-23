@@ -54,13 +54,13 @@ img.anotacaoOrigem { /*vertical-align:top;*/
 	text-align: justify;
 }
 
-.ementa,.ementa * {
+.ementa,.ementa * {/*alterado*/
 	display: block;
-	margin: 0 0 0 auto;
-	width: 9cm; 
+	margin: 0 0 0 80px;
+	/* width: 9cm;  */
 	font-size: 9pt;
 	text-align: justify;
-	padding: 24pt 0 24pt 60pt; /*alterado*/
+	padding: 24pt 0 24pt 0; 
 }
 
 .ementa * {
