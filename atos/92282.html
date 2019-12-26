@@ -1,0 +1,688 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+
+        INC
+
+
+
+        RFB
+
+
+
+
+
+        /&nbsp;Incra
+
+
+
+
+        &nbsp;Nº&nbsp;1807
+        &nbsp;-&nbsp; 2018
+
+    </title>
+
+    <!--%=request.getAttribute("ambienteInternet")%-->
+
+    <link href="estilo/estilo.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="/sijut2consulta/CSS/estilo-lucene.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="/sijut2consulta/CSS/aw.css" rel="stylesheet" type="text/css">
+    <link href="/sijut2consulta/CSS/jquery-ui-1.8.4.custom.css" rel="stylesheet" type="text/css" />
+    <link href="/sijut2consulta/CSS/alertas.css" rel="stylesheet" type="text/css" />
+
+    <link href="/sijut2consulta/CSS/estilo-impressao.css" media="print" rel="stylesheet" type="text/css" />
+
+
+    <!-- Configura barras de rolagem do Internet Explorer-->
+    <!--[if IE]> 
+		<link rel="stylesheet" type="text/css" href="CSS/IE.css" />
+	<![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/CPF.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/trim.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/Numeros.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/Datas.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/retirarMascara.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/HTML.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/Email.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/validacoes.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/aw.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/funcoesJS/highLight.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/jquery-1.7.2.min.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/jquery-ui-1.8.13.custom.min.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/ui.dropdownchecklist-1.4-min.js"></script>
+    <script language="javascript" src="/sijut2consulta/javascript/jquery.ui.datepicker-pt-BR.js"></script>
+    <!-- <script language="javascript" src="http://filamentgroup.github.com/EnhanceJS/enhance.js"></script> -->
+</head>
+
+<body>
+    <!-- GOVERNO ================================================================================ -->
+    <!--
+	<div id="wrap">
+		<div id="logoBrasil">
+			<a class="linkBrasil" href="http://www.brasil.gov.br/" target="_blank" title="http://www.brasil.gov.br"></a>
+		</div>
+	</div>
+	-->
+    <!-- /GOVERNO ================================================================================ -->
+
+
+    <style>
+        div#wrapper-barra-brasil {
+            max-width: 95%;
+        }
+    </style>
+
+       <div id="divPrincipal">
+
+        <div id="divConteudo">
+
+            <form name="frmPesquisa" method="post" action="pesquisa.action">
+                <input type="hidden" name="idAto" value="92282" />
+                <input type="hidden" name="idSegmento" value="" />
+
+
+                <script>
+                    function showHideDestino(nome) {
+                        var teste = document.getElementById(nome);
+                        if (teste.style.display == 'none')
+                            teste.style.display = '';
+                        else teste.style.display = 'none';
+                    }
+
+                    function showHideOrigem(nome) {
+                        var teste = document.getElementById(nome);
+                        if (teste.style.display == 'none')
+                            teste.style.display = '';
+                        else teste.style.display = 'none';
+                    }
+
+                    $(document).ready(function () {
+                        $('.collapse').click(function () {
+                            $(this).find('img').toggleClass('ativo inativo');
+                            $('#conteudo_historico').toggle();
+                        });
+                    });
+
+                    $(document).ready(function () {
+                        $("#historico_epigrafe")
+                            .hover(function (e) {
+                                e.preventDefault();
+                                $('#historicoEpigrafe').css('position', 'absolute');
+                                $('#historicoEpigrafe').css('top', e.pageY - 10);
+                                $('#historicoEpigrafe').css('left', e.pageX);
+                                $("#historicoEpigrafe").show();
+
+                            });
+                        $("#historico_epigrafe")
+                            .mouseleave(function () {
+                                $("#historicoEpigrafe").hide();
+
+                            });
+
+                    });
+
+
+                </script>
+
+
+                <div id="divTexto">
+
+
+
+
+
+
+                    <p class="ementa" id="1893391">
+                        Altera a Instrução Normativa Conjunta RFB/Incra n<strike>º</strike> 1.581, de 17 de agosto de
+                        2015, que estabelece prazos e procedimentos para atualização cadastral no Sistema Nacional de
+                        Cadastro Rural (SNCR) e no Cadastro de Imóveis Rurais (Cafir).
+                    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Inclui historico após a impressão da ementa (a ementa pode apresentar mais de um segmento caso tenha sido anotada com alguma anotação que exija esse comportamento) -->
+
+
+                    <!-- Historico de Alterações -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos nao identificad">
+
+
+
+
+
+
+
+
+
+                        <span id="1893392">
+
+
+
+
+
+
+                            <p>O SECRETÁRIO DA RECEITA FEDERAL DO BRASIL e o PRESIDENTE DO INSTITUTO NACIONAL DE
+                                COLONIZAÇÃO E REFORMA AGRÁRIA, no uso das atribuições que lhes conferem o inciso III do
+                                art. 327 do Regimento Interno da Secretaria da Receita Federal do Brasil, aprovado pela
+                                Portaria MF nº 430, de 9 de outubro de 2017, o inciso VII do art. 21 da Estrutura
+                                Regimental do Instituto Nacional de Colonização e Reforma Agrária (Incra), aprovada pelo
+                                Decreto nº 8.955, de 11 de janeiro de 2017, e o inciso IX do art. 121 do Regimento
+                                Interno, aprovado pela Portaria Incra/P/nº 49, de 31 de janeiro de 2017, e tendo em
+                                vista o disposto nos §§ 1º e 2º do art. 1º e no art. 2º da Lei nº 5.868, de 12 de
+                                dezembro de 1972, e no § 2º do art. 6º e no § 3º do art. 16 da Lei nº 9.393, de 19 de
+                                dezembro de 1996, resolvem:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1893394">
+
+
+
+
+
+
+                            <p>Art. 1º A Instrução Normativa Conjunta RFB/Incra nº 1.581, de 17 de agosto de 2015, passa
+                                a vigorar com a seguinte alteração:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos nao identificad">
+
+
+
+
+
+
+
+
+
+                        <span id="1893395">
+
+
+
+
+
+
+                            <p>&ldquo;Art. 7&ordm; A vincula&ccedil;&atilde;o de um im&oacute;vel no Cafir a mais de um
+                                im&oacute;vel cadastrado no SNCR ser&aacute; admitida quando ficar comprovado que a
+                                perda de destina&ccedil;&atilde;o rural, nos termos do Cap&iacute;tulo VI da
+                                Instru&ccedil;&atilde;o Normativa Incra n&ordm; 82, de 27 de mar&ccedil;o de 2015, de
+                                alguma parcela componente do im&oacute;vel rural cadastrado no Cafir tenha provocado sua
+                                descontinuidade, resultando em mais de um im&oacute;vel cadastrado no SNCR.&rdquo; (NR)
+                            </p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+                        <a href="javascript:showHideOrigem('anotacaoSegmentoOrigemDIV1893395-1');">
+                            <img class="anotacaoOrigem" src="imagens/link_go_16x16A.png" border="0"
+                                title="Links para os atos mencionados" />
+                        </a>
+                        <div class="tright" id="anotacaoSegmentoOrigemDIV1893395-1" style="display:none">
+
+
+                            <a href="link.action?visao=anotado&idAto=67113#1559682">
+                                (Instru&#xE7;&#xE3;o Normativa Conjunta
+
+                                RFB
+
+                                Incra
+
+                                n&ordm;
+                                1581,
+                                de
+                                17/08/15
+                                -
+                                <span class="textoIntegraReduzidoSegmento">
+                                    ART. 7º A VINCULAÇÃO DE UM IMÓVEL NO CAFIR A
+                                </span>
+                                -
+                                Altera&#xE7;&#xE3;o)
+                            </a><br />
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1893396">
+
+
+
+
+
+
+                            <p>Art. 2º Ficam revogados os incisos I e II do caput do art. 7º da Instrução Normativa
+                                Conjunta RFB/Incra nº 1.581, de 17 de agosto de 2015.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+                        <a href="javascript:showHideOrigem('anotacaoSegmentoOrigemDIV1893396-1');">
+                            <img class="anotacaoOrigem" src="imagens/link_go_16x16A.png" border="0"
+                                title="Links para os atos mencionados" />
+                        </a>
+                        <div class="tright" id="anotacaoSegmentoOrigemDIV1893396-1" style="display:none">
+
+
+                            <a href="link.action?visao=anotado&idAto=67113#1748530">
+                                (Instru&#xE7;&#xE3;o Normativa Conjunta
+
+                                RFB
+
+                                Incra
+
+                                n&ordm;
+                                1581,
+                                de
+                                17/08/15
+                                -
+                                <span class="textoIntegraReduzidoSegmento">
+                                    I - QUANDO FICAR COMPROVADO QUE A PERDA DE DE
+                                </span>
+                                -
+                                Revoga&#xE7;&#xE3;o)
+                            </a><br />
+
+                            <a href="link.action?visao=anotado&idAto=67113#1748531">
+                                (Instru&#xE7;&#xE3;o Normativa Conjunta
+
+                                RFB
+
+                                Incra
+
+                                n&ordm;
+                                1581,
+                                de
+                                17/08/15
+                                -
+                                <span class="textoIntegraReduzidoSegmento">
+                                    II - QUANDO, SOBRE PARCELAS LIMÍTROFES DE PRO
+                                </span>
+                                -
+                                Revoga&#xE7;&#xE3;o)
+                            </a><br />
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1893397">
+
+
+
+
+
+
+                            <p>Art. 3º Esta Instrução Normativa Conjunta entra em vigor na data de sua publicação no
+                                Diário Oficial da União.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos fecho">
+
+
+
+
+
+
+
+
+
+                        <span id="1893398">
+
+
+
+
+
+
+                            <p>JORGE ANTONIO DEHER RACHID
+                                Secretário da Receita Federal do Brasil
+
+                                LEONARDO GÓES SILVA
+                                Presidente do Instituto Nacional de Colonização e Reforma Agrária</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <div class="avisoSijut">*Este texto não substitui o publicado oficialmente.</div>
+
+            </form>
+        </div>
+
+        <script src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+
+    </div><!-- FIM: divPrincipal -->
+</body>
+
+</html>

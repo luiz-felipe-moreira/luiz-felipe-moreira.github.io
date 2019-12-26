@@ -223,10 +223,10 @@ h1.title {
 	padding: 10px 5px 0 5px;
 }
 
-div#divConteudo {
+div#divConteudo {/*alterado*/
 	background: #fff;
 	/*border: 1px solid #000;*/
-	border-bottom: 1px solid #000;
+	/* border-bottom: 1px solid #000; */ 
 	padding: 0px 0px 5px 0;
 	clear: right;
 	/*overflow: auto;*/
@@ -725,8 +725,9 @@ mark{
 	width: 8cm;
 	text-indent: 0; 
 	}
-.ementa strike{
+.ementa strike{ /*alterado*/
 	padding: 0;
+	margin: 0;
 }
 
 .historicoEpigrafeClass{
