@@ -1,0 +1,2554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>
+	
+		INC
+		
+		
+			
+				RFB
+				
+			
+			
+		
+			
+				/&nbsp;Incra
+				
+			
+			
+		
+		&nbsp;Nº&nbsp;1581
+		&nbsp;-&nbsp; 2015
+	
+	</title>	
+	
+	<script language="javascript">
+		function imprimir(){
+			var tamHA = 0;
+			if($("#conteudo_historico").length){
+				tamHA = document.getElementById("conteudo_historico").offsetLeft; 
+			}
+			funcao="imprimir.action?visao=anotado&idAto="+document.frmPesquisa.idAto.value+"&tamHA="+tamHA;
+			window.open(funcao,'page','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=658,height=800');
+		}
+	</script>
+
+	<!--%=request.getAttribute("ambienteInternet")%-->
+	
+	<link href="estilo/estilo.css" rel="stylesheet" type="text/css" />
+	
+	
+	<link href="estilo/estilo-lucene.css" rel="stylesheet" type="text/css" />	
+	
+	
+	<link href="estilo/aw.css" rel="stylesheet" type="text/css">
+	<link href="estilo/jquery-ui-1.8.4.custom.css" rel="stylesheet" type="text/css" />
+	<link href="estilo/alertas.css" rel="stylesheet" type="text/css" />
+
+	<link href="estilo/estilo-impressao.css" media="print" rel="stylesheet" type="text/css" />
+	
+		
+	<!-- Configura barras de rolagem do Internet Explorer-->
+	<!--[if IE]> 
+		<link rel="stylesheet" type="text/css" href="CSS/IE.css" />
+	<![endif]-->
+	
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script language="javascript" src="javascript/funcoesJS/CPF.js"></script>
+	<script language="javascript" src="javascript/funcoesJS/trim.js"></script>
+	<script language="javascript" src="javascript/funcoesJS/Numeros.js"></script>
+	<script language="javascript" src="javascript/funcoesJS/Datas.js"></script>
+	<script language="javascript" src="javascript/funcoesJS/retirarMascara.js"></script>
+	<script language="javascript" src="javascript/funcoesJS/HTML.js"></script>
+	<script language="javascript" src="javascript/funcoesJS/Email.js"></script>
+	<script language="javascript" src="javascript/validacoes.js"></script>
+	<script language="javascript" src="javascript/funcoesJS/aw.js"></script>
+	<script language="javascript" src="javascript/funcoesJS/highLight.js"></script>
+	<script language="javascript" src="javascript/jquery-1.7.2.min.js"></script>
+	<script language="javascript" src="javascript/jquery-ui-1.8.13.custom.min.js"></script>
+	<script language="javascript" src="javascript/ui.dropdownchecklist-1.4-min.js"></script>
+	<script language="javascript" src="javascript/jquery.ui.datepicker-pt-BR.js"></script>
+	<!-- <script language="javascript" src="http://filamentgroup.github.com/EnhanceJS/enhance.js"></script> -->
+</head>
+
+<body>
+	<!-- GOVERNO ================================================================================ -->
+	<!--
+	<div id="wrap">
+		<div id="logoBrasil">
+			<a class="linkBrasil" href="http://www.brasil.gov.br/" target="_blank" title="http://www.brasil.gov.br"></a>
+		</div>
+	</div>
+	-->
+	<!-- /GOVERNO ================================================================================ -->
+
+
+<style>
+div#wrapper-barra-brasil {
+	max-width: 95%;
+}
+</style>
+
+	<div id="divPrincipal">	
+
+
+		<div id="divConteudo"  >
+			
+			<form name="frmPesquisa" method="post" action="pesquisa.action">
+				<input type="hidden" name="idAto" value="67113" />
+				<input type="hidden" name="idSegmento" value="" />
+				
+					
+	<script>
+		function showHideDestino(nome) {
+			var teste = document.getElementById(nome); 
+			if(teste.style.display == 'none') 
+				teste.style.display='';
+			else teste.style.display='none';
+		}
+		
+		function showHideOrigem(nome) {
+			var teste = document.getElementById(nome);
+			if(teste.style.display == 'none') 
+				teste.style.display='';
+			else teste.style.display='none';
+		}
+
+		$(document).ready(function(){
+			$('.collapse').click(function() {				
+	            $(this).find('img').toggleClass('ativo inativo');                     
+	            $('#conteudo_historico').toggle();             
+	        });	   
+		}); 
+		
+		$(document).ready(function(){
+			$("#historico_epigrafe")
+			  .hover(function(e) {
+				    e.preventDefault();
+				    $('#historicoEpigrafe').css( 'position', 'absolute' );
+				    $('#historicoEpigrafe').css( 'top', e.pageY-10 );
+				    $('#historicoEpigrafe').css( 'left', e.pageX );
+				 $("#historicoEpigrafe").show();
+			  
+			  });
+			$("#historico_epigrafe")
+			  .mouseleave(function() {
+				 $("#historicoEpigrafe").hide();
+			  
+			  });
+			
+		}); 
+		     
+		
+	</script>	
+				
+												    
+						<!-- Inicio link para historico de epigrafe -->
+						
+						
+						
+						<!-- FIM  link para historico de epigrafe-->
+												
+					
+						<div id="divTexto">
+						 
+													
+							
+							
+							
+								
+								
+							<p class="ementa" id="1559662">
+								Estabelece prazos e procedimentos para atualização do Sistema Nacional de Cadastro Rural (SNCR) e do Cadastro de Imóveis Rurais (Cafir) que visa propiciar a integração entre esses sistemas cadastrais com a finalidade de estruturação do Cadastro Nacional de Imóveis Rurais (CNIR).
+							</p>		
+													
+															
+						
+						
+															
+						
+						
+						
+														
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- Inclusão do historico de alterações -->	
+						
+							
+<!-- Historico de Alterações -->
+
+<div id="historico" class="tright block">
+<h4>
+	Histórico de alterações <span class="collapse"> <img
+		class="inativo" src="images/arvore/setaDown.png" alt="retrair">
+		<img class="ativo" src="images/arvore/setaUp.png" alt="expandir">
+	</span>
+</h4>
+<div id="conteudo_historico">
+					
+		
+		
+		
+						<a
+			href="link.action?visao=anotado&idAto=76728">
+			
+			(Alterado(a) pelo(a) Instru&#xE7;&#xE3;o Normativa Conjunta
+									
+				
+					RFB
+					
+				
+				
+									
+				
+					/&nbsp;Incra
+					
+				
+				
+			 n&ordm; 1, de 18 de agosto de 2016)<br>
+		</a>
+					
+		
+		
+		
+						<a
+			href="link.action?visao=anotado&idAto=84875">
+			
+			(Alterado(a) pelo(a) Instru&#xE7;&#xE3;o Normativa Conjunta
+									
+				
+					RFB
+					
+				
+				
+									
+				
+					/&nbsp;Incra
+					
+				
+				
+			 n&ordm; 1724, de 31 de julho de 2017)<br>
+		</a>
+					
+		
+		
+		
+						<a
+			href="link.action?visao=anotado&idAto=92282">
+			
+			(Alterado(a) pelo(a) Instru&#xE7;&#xE3;o Normativa Conjunta
+									
+				
+					RFB
+					
+				
+				
+									
+				
+					/&nbsp;Incra
+					
+				
+				
+			 n&ordm; 1807, de 23 de maio de 2018)<br>
+		</a>
+	
+</div>
+</div>
+<br/><br/>
+
+
+
+
+													
+					
+					
+					
+					
+					
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1559663">
+							
+							
+								
+								
+								
+									<p>O SECRETÁRIO DA RECEITA FEDERAL DO BRASIL, no uso da atribuição que lhe confere o inciso III do art. 280 do Regimento Interno da Secretaria da Receita Federal do Brasil, aprovado pela Portaria Ministério da Fazenda - MF nº 203, de 14 de maio de 2012, e a PRESIDENTE DO INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA AGRÁRIA, no uso da atribuição que lhe confere o inciso VII do art. 21 da Estrutura Regimental do Instituto Nacional de Colonização e Reforma Agrária, aprovada pelo Decreto nº 6.812, de 3 de abril de 2009, e o inciso IX do art. 122 do Regimento Interno, aprovado pela Portaria Ministério do Desenvolvimento Agrário - MDA nº 20, de 8 de abril de 2009, e tendo em vista o disposto nos §§ 1º e 2º  do art. 1º e art. 2º da Lei nº 5.868, de 12 de dezembro de 1972, e § 2º do art. 6º e § 3º do art. 16 da Lei nº 9.393, de 19 de dezembro de 1996, resolvem:
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559665">
+							
+							
+								
+								
+								
+									<p>Art. 1º  Estabelecer a obrigatoriedade de atualização cadastral no Sistema Nacional de Cadastro Rural (SNCR) e no Cadastro de Imóveis Rurais (Cafir), visando propiciar a integração entre os referidos sistemas cadastrais com a finalidade de estruturação do Cadastro Nacional de Imóveis Rurais (CNIR).
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos paragrafo" id="1559666">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1559666">
+							
+							
+								
+								
+								
+									<p> § 1º Para fins da integração prevista no caput, fica criado o serviço “Vincular Nirf” no sistema eletrônico online do CNIR, disponível no sítio do Cadastro Rural na Internet, no endereço www.cadastrorural.gov.br.</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+														
+							
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559666-2" href="link.action?visao=compilado&idAto=84875#1748227">
+														(Reda&#xE7;&#xE3;o dada pelo(a)
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559666-2" href="link.action?visao=compilado&idAto=84875#1748238">
+														(Vide
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+							
+															
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos paragrafo" id="1559667">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1559667">
+							
+							
+								
+								
+								
+									<p>§ 2º O procedimento de vinculação a que se refere o § 1º é o descrito no Manual do CNIR, disponível no sítio do Cadastro Rural na Internet mencionado no § 1º.</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+														
+							
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559667-2" href="link.action?visao=compilado&idAto=84875#1748228">
+														(Reda&#xE7;&#xE3;o dada pelo(a)
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559667-2" href="link.action?visao=compilado&idAto=84875#1748238">
+														(Vide
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+							
+															
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos paragrafo" id="1559668">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1559668">
+							
+							
+								
+								
+								
+									<p>§ 3º O prazo final para realização da atualização cadastral é fixado em 31 de dezembro de 2016 para imóveis com área maior que 50 ha.</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+														
+							
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559668-2" href="link.action?visao=compilado&idAto=76728#1656444">
+														(Reda&#xE7;&#xE3;o dada pelo(a)
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1,
+														de 
+														18 de agosto de 2016)
+													</a>
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+							
+															
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1559669">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																				
+										
+										
+										
+																					
+											<span class="inciso" id="1559669">
+												I -
+												<a href="link.action?visao=compilado&idAto=76728#1656444">
+													(Suprimido(a) - vide                              
+													Instru&#xE7;&#xE3;o Normativa Conjunta
+													
+														RFB
+													
+														Incra
+													
+													n&ordm;
+													1,
+													de
+													18 de agosto de 2016)
+												</a>
+											</span>											
+										
+																															
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1559670">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																				
+										
+										
+										
+																					
+											<span class="inciso" id="1559670">
+												II -
+												<a href="link.action?visao=compilado&idAto=76728#1656444">
+													(Suprimido(a) - vide                              
+													Instru&#xE7;&#xE3;o Normativa Conjunta
+													
+														RFB
+													
+														Incra
+													
+													n&ordm;
+													1,
+													de
+													18 de agosto de 2016)
+												</a>
+											</span>											
+										
+																															
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1559671">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																				
+										
+										
+										
+																					
+											<span class="inciso" id="1559671">
+												III -
+												<a href="link.action?visao=compilado&idAto=76728#1656444">
+													(Suprimido(a) - vide                              
+													Instru&#xE7;&#xE3;o Normativa Conjunta
+													
+														RFB
+													
+														Incra
+													
+													n&ordm;
+													1,
+													de
+													18 de agosto de 2016)
+												</a>
+											</span>											
+										
+																															
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1559672">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																				
+										
+										
+										
+																					
+											<span class="inciso" id="1559672">
+												IV -
+												<a href="link.action?visao=compilado&idAto=76728#1656444">
+													(Suprimido(a) - vide                              
+													Instru&#xE7;&#xE3;o Normativa Conjunta
+													
+														RFB
+													
+														Incra
+													
+													n&ordm;
+													1,
+													de
+													18 de agosto de 2016)
+												</a>
+											</span>											
+										
+																															
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1559673">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																				
+										
+										
+										
+																					
+											<span class="inciso" id="1559673">
+												V -
+												<a href="link.action?visao=compilado&idAto=76728#1656444">
+													(Suprimido(a) - vide                              
+													Instru&#xE7;&#xE3;o Normativa Conjunta
+													
+														RFB
+													
+														Incra
+													
+													n&ordm;
+													1,
+													de
+													18 de agosto de 2016)
+												</a>
+											</span>											
+										
+																															
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos paragrafo" id="1559674">
+							
+							
+								
+								
+								
+									<p>§ 4º  O procedimento e o prazo para vinculação de imóvel com área total menor ou igual a 50 hectares serão estabelecidos em ato normativo específico.
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559675">
+							
+							
+								
+								
+								
+									<p>Art. 2º  Cada imóvel cadastrado no SNCR deverá ser vinculado a um único imóvel cadastrado no Cafir, exceto nas situações previstas nos arts. 3º, 6º e 7º.
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559676">
+							
+							
+								
+								
+								
+									<p>Art. 3º  Fica dispensado de efetuar a vinculação o imóvel:
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1559677">
+							
+							
+								
+								
+								
+									<p>I – declarado no SNCR com a área total inserida no perímetro urbano do município;
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1559678">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1559678">
+							
+							
+								
+								
+								
+									<p>II - indicado no Cafir como imóvel descaracterizado por perda de destinação rural.</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+														
+							
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559678-2" href="link.action?visao=compilado&idAto=84875#1748231">
+														(Reda&#xE7;&#xE3;o dada pelo(a)
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559678-2" href="link.action?visao=compilado&idAto=84875#1748238">
+														(Vide
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+							
+															
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559679">
+							
+							
+								
+								
+								
+									<p>Art. 4º  Se o imóvel na situação prevista no inciso I do art. 3º estiver cadastrado no Cafir, a inscrição deverá ser cancelada, conforme previsto no inciso I do art. 25 da Instrução Normativa RFB nº 1.467, de 22 de maio de 2014.
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559680">
+							
+							
+								
+								
+								
+									<p>Art. 5º  Se o imóvel na situação prevista no inciso II do art. 3º estiver cadastrado no SNCR, a inscrição deverá ser cancelada, conforme previsto no inciso III do art. 11 da IN INCRA nº 82/2015.
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559681">
+							
+							
+								
+								
+								
+									<p>Art. 6º  A vinculação de um imóvel no SNCR a mais de um imóvel cadastrado no Cafir será admitida caso seja comprovado que o perímetro urbano do município provocou a descontinuidade do imóvel cadastrado no SNCR, resultando em mais de uma parcela localizada em zona rural.
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559682">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1559682">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																				
+										
+										
+										
+										
+																															
+									
+																				
+										
+										
+										
+										
+																															
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1559682">
+							
+							
+								
+								
+								
+									<p>Art. 7º A vinculação de um imóvel no Cafir a mais de um imóvel cadastrado no SNCR será admitida quando ficar comprovado que a perda de destinação rural, nos termos do Capítulo VI da Instrução Normativa Incra nº 82, de 27 de março de 2015, de alguma parcela componente do imóvel rural cadastrado no Cafir tenha provocado sua descontinuidade, resultando em mais de um imóvel cadastrado no SNCR.</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+														
+							
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559682-3" href="link.action?visao=compilado&idAto=92282#1893395">
+														(Reda&#xE7;&#xE3;o dada pelo(a)
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1807,
+														de 
+														23 de maio de 2018)
+													</a>
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+							
+															
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1748530">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																				
+										
+										
+										
+										
+																															
+									
+																				
+										
+										
+										
+										
+																															
+									
+																				
+										
+										
+										
+																					
+											<span class="inciso" id="1748530">
+												I -
+												<a href="link.action?visao=compilado&idAto=92282#1893396">
+													(Revogado(a) pelo(a)                             
+													Instru&#xE7;&#xE3;o Normativa Conjunta
+													
+														RFB
+													
+														Incra
+													
+													n&ordm;
+													1807,
+													de
+													23 de maio de 2018)
+												</a>
+											</span>											
+										
+																															
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos inciso" id="1748531">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																				
+										
+										
+										
+										
+																															
+									
+																				
+										
+										
+										
+										
+																															
+									
+																				
+										
+										
+										
+																					
+											<span class="inciso" id="1748531">
+												II -
+												<a href="link.action?visao=compilado&idAto=92282#1893396">
+													(Revogado(a) pelo(a)                             
+													Instru&#xE7;&#xE3;o Normativa Conjunta
+													
+														RFB
+													
+														Incra
+													
+													n&ordm;
+													1807,
+													de
+													23 de maio de 2018)
+												</a>
+											</span>											
+										
+																															
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559683">
+							
+							
+								
+								
+								
+								
+								
+								
+								
+																
+								
+								
+																	
+									
+									
+																		
+																			
+								
+								
+								
+								
+								
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1559683">
+							
+							
+								
+								
+								
+									<p>Art. 8º A falta da vinculação prevista no art. 1º, decorrido o prazo constante desta Instrução Normativa, sujeita o imóvel rural, a partir de 1º de janeiro de 2017, à situação de pendência cadastral no Cafir, conforme o inciso III § 1º do art. 6º da IN RFB nº 1.467/2014, e à seleção no SNCR para fins de inibição da emissão do Certificado de Cadastro de Imóvel Rural (CCIR).</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+														
+							
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1559683-2" href="link.action?visao=compilado&idAto=76728#1656446">
+														(Reda&#xE7;&#xE3;o dada pelo(a)
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1,
+														de 
+														18 de agosto de 2016)
+													</a>
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+							
+															
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1748532">
+							
+							
+								
+								
+								
+									<p>Art. 8º-A O procedimento de vinculação previsto no § 1º do art. 1º dispensa a apresentação de solicitação de atos cadastrais perante o Cafir, pois a atualização dos dados do imóvel rural será feita de forma automática com base nas informações prestadas por meio da Declaração para Cadastro Rural (DCR) do SNCR.</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+														
+							
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1748532-1" href="link.action?visao=compilado&idAto=84875#1748236">
+														(Inclu&#xED;do(a) pelo(a)
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1748532-1" href="link.action?visao=compilado&idAto=84875#1748238">
+														(Vide
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+							
+															
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos nao identificad" id="1748533">
+							
+							
+								
+								
+								
+									<p>Parágrafo único. A dispensa de que trata o caput não se aplica às hipóteses previstas nos §§ 3º e 5º do art. 8º da Instrução Normativa RFB nº 1.467, de 2014.</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+														
+							
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1748533-1" href="link.action?visao=compilado&idAto=84875#1748237">
+														(Inclu&#xED;do(a) pelo(a)
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+																
+									
+										
+										
+										
+																				
+										
+											
+												
+													&nbsp;
+													<a id="anotacaoSegmentoDestinoDIV1748533-1" href="link.action?visao=compilado&idAto=84875#1748238">
+														(Vide
+														Instru&#xE7;&#xE3;o Normativa Conjunta
+														
+															RFB
+														
+															Incra
+														 
+														n&ordm; 
+														1724,
+														de 
+														31 de julho de 2017)
+													</a>
+												
+												
+											
+										
+										
+										
+																	
+										
+																					
+									
+							
+															
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos artigo" id="1559684">
+							
+							
+								
+								
+								
+									<p>Art. 9º  Esta Instrução Normativa entra em vigor na data de sua publicação no Diário Oficial da União.
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+											
+					
+					
+					
+					
+					
+					
+					
+					
+						<div class="divSegmentos fecho" id="1559685">
+							
+							
+								
+								
+								
+									<p>JORGE ANTONIO DEHER RACHID
+Secretário da Receita Federal do Brasil 
+
+MARIA LÚCIA DE OLIVEIRA FALCÓN 
+Presidente do Instituto Nacional de Colonização e Reforma Agrária
+</p>									
+								
+								
+								
+								
+								
+									  
+									  
+										
+										   <a href="anexoOutros.action?idArquivoBinario=0"></a>
+									  
+								
+																
+								
+								
+								
+								
+								
+								
+															
+																	
+						
+						
+								
+																			
+										
+								
+								
+																			
+																									
+							
+							
+						</div>		
+					
+												
+				
+				
+			</div>								
+				
+				
+					<div class="avisoSijut">*Este texto não substitui o publicado oficialmente.</div>
+				
+			</form>
+		</div>	
+		
+		<div class="irtopo">
+			<a href="#divPrincipal" class="upArrow" title="ir topo"></a>			
+		</div>
+		 
+		<!-- 2012-06-27 -->
+
+
+<script src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+		
+	</div><!-- FIM: divPrincipal -->
+</body>
+
+</html>
