@@ -1,0 +1,5577 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+
+        Port.
+
+
+
+        RFB
+
+
+
+
+        &nbsp;Nº&nbsp;3124
+        &nbsp;-&nbsp; 2017
+
+    </title>
+
+    <script language="javascript">
+        function imprimir() {
+            var tamHA = 0;
+            if ($("#conteudo_historico").length) {
+                tamHA = document.getElementById("conteudo_historico").offsetLeft;
+            }
+            funcao = "imprimir.action?visao=anotado&idAto=" + document.frmPesquisa.idAto.value + "&tamHA=" + tamHA;
+            window.open(funcao, 'page', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=658,height=800');
+        }
+    </script>
+
+    <!--%=request.getAttribute("ambienteInternet")%-->
+
+    <link href="estilo/estilo.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="estilo/estilo-lucene.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="estilo/aw.css" rel="stylesheet" type="text/css">
+    <link href="estilo/jquery-ui-1.8.4.custom.css" rel="stylesheet" type="text/css" />
+    <link href="estilo/alertas.css" rel="stylesheet" type="text/css" />
+
+    <link href="estilo/estilo-impressao.css" media="print" rel="stylesheet" type="text/css" />
+
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script language="javascript" src="javascript/funcoesJS/CPF.js"></script>
+    <script language="javascript" src="javascript/funcoesJS/trim.js"></script>
+    <script language="javascript" src="javascript/funcoesJS/Numeros.js"></script>
+    <script language="javascript" src="javascript/funcoesJS/Datas.js"></script>
+    <script language="javascript" src="javascript/funcoesJS/retirarMascara.js"></script>
+    <script language="javascript" src="javascript/funcoesJS/HTML.js"></script>
+    <script language="javascript" src="javascript/funcoesJS/Email.js"></script>
+    <script language="javascript" src="javascript/validacoes.js"></script>
+    <script language="javascript" src="javascript/funcoesJS/aw.js"></script>
+    <script language="javascript" src="javascript/funcoesJS/highLight.js"></script>
+    <script language="javascript" src="javascript/jquery-1.7.2.min.js"></script>
+    <script language="javascript" src="javascript/jquery-ui-1.8.13.custom.min.js"></script>
+    <script language="javascript" src="javascript/ui.dropdownchecklist-1.4-min.js"></script>
+    <script language="javascript" src="javascript/jquery.ui.datepicker-pt-BR.js"></script>
+</head>
+
+<body>
+    <!-- GOVERNO ================================================================================ -->
+    <!--
+	<div id="wrap">
+		<div id="logoBrasil">
+			<a class="linkBrasil" href="http://www.brasil.gov.br/" target="_blank" title="http://www.brasil.gov.br"></a>
+		</div>
+	</div>
+	-->
+    <!-- /GOVERNO ================================================================================ -->
+
+
+    <style>
+    </style>
+
+    <div id="divPrincipal">
+
+
+        <div id="divConteudo">
+
+            <form name="frmPesquisa" method="post" action="pesquisa.action">
+                <input type="hidden" name="idAto" value="87662" />
+                <input type="hidden" name="idSegmento" value="" />
+
+
+                <script>
+                    function showHideDestino(nome) {
+                        var teste = document.getElementById(nome);
+                        if (teste.style.display == 'none')
+                            teste.style.display = '';
+                        else teste.style.display = 'none';
+                    }
+
+                    function showHideOrigem(nome) {
+                        var teste = document.getElementById(nome);
+                        if (teste.style.display == 'none')
+                            teste.style.display = '';
+                        else teste.style.display = 'none';
+                    }
+
+                    $(document).ready(function () {
+                        $('.collapse').click(function () {
+                            $(this).find('img').toggleClass('ativo inativo');
+                            $('#conteudo_historico').toggle();
+                        });
+                    });
+
+                    $(document).ready(function () {
+                        $("#historico_epigrafe")
+                            .hover(function (e) {
+                                e.preventDefault();
+                                $('#historicoEpigrafe').css('position', 'absolute');
+                                $('#historicoEpigrafe').css('top', e.pageY - 10);
+                                $('#historicoEpigrafe').css('left', e.pageX);
+                                $("#historicoEpigrafe").show();
+
+                            });
+                        $("#historico_epigrafe")
+                            .mouseleave(function () {
+                                $("#historicoEpigrafe").hide();
+
+                            });
+
+                    });
+
+
+                </script>
+
+                <div id="divTexto">
+
+                    <p class="ementa" id="1826424">
+                        Disciplina a concessão de adicionais pelo exercício de atividades insalubres, perigosas ou
+                        penosas a que se refere o inciso IV do art. 61, da Lei n<strike>º</strike> 8.112, de 11 de
+                        dezembro de 1990, no âmbito da Secretaria da Receita Federal do Brasil.
+                    </p>
+
+                    <!-- Inclui historico após a impressão da ementa (a ementa pode apresentar mais de um segmento caso tenha sido anotada com alguma anotação que exija esse comportamento) -->
+
+
+                    <!-- Historico de Alterações -->
+
+                    <div id="historico" class="tright block">
+                        <h4>
+                            Histórico de alterações <span class="collapse"> <img class="inativo"
+                                    src="images/arvore/setaDown.png" alt="retrair">
+                                <img class="ativo" src="images/arvore/setaUp.png" alt="expandir">
+                            </span>
+                        </h4>
+                        <div id="conteudo_historico">
+
+
+
+
+                            <a href="link.action?visao=anotado&idAto=92055">
+
+                                (Alterado(a) pelo(a) Portaria
+
+
+                                RFB
+
+
+
+                                n&ordm; 723, de 11 de maio de 2018)<br>
+                            </a>
+
+
+
+
+                            <a href="link.action?visao=anotado&idAto=97508">
+
+                                (Alterado(a) pelo(a) Portaria
+
+
+                                RFB
+
+
+
+                                n&ordm; 2040, de 20 de dezembro de 2018)<br>
+                            </a>
+
+
+
+
+                            <a href="link.action?visao=anotado&idAto=102489">
+
+                                (Alterado(a) pelo(a) Portaria
+
+
+                                RFB
+
+
+
+                                n&ordm; 1174, de 08 de julho de 2019)<br>
+                            </a>
+
+
+
+
+                            <a href="link.action?visao=anotado&idAto=105908">
+
+                                (Alterado(a) pelo(a) Portaria
+
+
+                                RFB
+
+
+
+                                n&ordm; 2304, de 31 de dezembro de 2019)<br>
+                            </a>
+
+                        </div>
+                    </div>
+                    <br /><br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos nao identificad">
+
+
+
+
+
+
+
+
+
+                        <span id="1826425">
+
+
+
+
+
+
+                            <p>O SECRETÁRIO DA RECEITA FEDERAL DO BRASIL, no uso das atribuições que lhe confere o
+                                inciso III do art. 327 do Regimento Interno da Secretaria da Receita Federal do Brasil,
+                                aprovado pela Portaria MF nº 430, de 9 de outubro de 2017, e tendo em vista o disposto
+                                no Decreto-Lei nº 1.873, de 27 de maio de 1981, no inciso IV do art. 61 e nos arts. 68 a
+                                70 da Lei nº 8.112, de 11 de dezembro de 1990, no art. 12 da Lei nº 8.270, de 17 de
+                                dezembro de 1991, na Lei nº 13.464, de 10 de julho de 2017, no Decreto nº 97.458, de 11
+                                de janeiro de 1989, e na Orientação Normativa SEGRT/MP nº 4, de 14 de fevereiro de 2017,
+                                resolve:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826427">
+
+
+
+
+
+
+                            <p>Art. 1º Os adicionais pertinentes ao exercício de atividades insalubres, perigosas ou
+                                penosas de que tratam o inciso IV do art. 61 e os arts. 68 a 70 da Lei nº 8.112, de 11
+                                de dezembro de 1990, serão concedidos, no âmbito da Secretaria da Receita Federal do
+                                Brasil (RFB), na forma disciplinada por esta Portaria.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826428">
+
+
+
+
+
+
+                            <p>Art. 2º A alocação de servidor ou a atribuição de encargo ou atividade que acarrete a
+                                percepção dos adicionais de que trata esta Portaria deverá ser precedida de:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1826429">
+
+
+
+
+
+
+                            <p>I - declaração de existência de créditos orçamentários emitida pela Unidade Pagadora
+                                (UPAG);</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+                        <span class="tachado" id="1826430">
+
+                            <p>II - declaração do titular da unidade quanto à necessidade do serviço que justifique a
+                                realização da atividade insalubre, perigosa ou penosa; e</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1826430">
+
+
+
+
+
+
+                            <p>II - declaração do titular da unidade quanto à necessidade do serviço que justifique a
+                                realização da atividade insalubre, perigosa ou penosa, e de que foi observado o
+                                dimensionamento de equipes constante do Anexo Único; e</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a id="anotacaoSegmentoDestinoDIV1826430-2"
+                            href="link.action?visao=anotado&idAto=92055#1889582">
+                            (Reda&#xE7;&#xE3;o dada pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1826431">
+
+
+
+
+
+
+                            <p>III - ratificação, pelo Superintendente Regional da Receita Federal do Brasil, pelo
+                                Corregedor ou pelo Coordenador-Geral, conforme o caso, da declaração a que se refere o
+                                inciso II.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826432">
+
+
+
+
+
+
+                            <p>Art. 3º A concessão de adicionais de insalubridade e periculosidade aos servidores em
+                                exercício na RFB, quando houver exposição permanente ou habitual a agentes físicos,
+                                químicos ou biológicos, comprovada mediante laudo técnico elaborado nos termos das
+                                Normas Regulamentadoras nº 15 e nº 16, aprovadas pela Portaria MTE nº 3.214, de 8 de
+                                junho de 1978, caracterizada a exposição e demonstrada a justificativa, será realizada
+                                conforme o disposto na Orientação Normativa SEGRT/MP nº 4, de 14 de fevereiro de 2017.
+                            </p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826433">
+
+
+
+
+
+
+                            <p>Art. 4º O dirigente de unidade local que identificar elementos que possam caracterizar a
+                                exposição de servidores a agentes físicos, químicos ou biológicos que justificam o
+                                pagamento de adicionais de insalubridade e periculosidade providenciará, nos termos da
+                                Orientação Normativa SEGRT/MP nº 4, de 2017, laudo técnico que deverá:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1826434">
+
+
+
+
+
+
+                            <p>I - ser elaborado por servidor público da esfera federal, estadual, distrital ou
+                                municipal, ou militar, ocupante de cargo público ou posto militar de médico com
+                                especialização em medicina do trabalho, ou de engenheiro ou de arquiteto com
+                                especialização em segurança do trabalho;</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1826435">
+
+
+
+
+
+
+                            <p>II - referir-se ao ambiente de trabalho e considerar a situação individual de trabalho do
+                                servidor; e</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1826436">
+
+
+
+
+
+
+                            <p>III - identificar:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos alinea">
+
+
+
+
+
+
+
+
+
+                        <span id="1826437">
+
+
+
+
+
+
+                            <p>a) o local de exercício ou o tipo de trabalho realizado;</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos alinea">
+
+
+
+
+
+
+
+
+
+                        <span id="1826438">
+
+
+
+
+
+
+                            <p>b) o agente nocivo à saúde ou o identificador do risco;</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos alinea">
+
+
+
+
+
+
+
+
+
+                        <span id="1826439">
+
+
+
+
+
+
+                            <p>c) o grau de agressividade ao ser humano, com especificação:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos item">
+
+
+
+
+
+
+
+
+
+                        <span id="1826440">
+
+
+
+
+
+
+                            <p>1. do limite de tolerância conhecida, quanto ao tempo de exposição ao agente nocivo; e
+                            </p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos item">
+
+
+
+
+
+
+
+
+
+                        <span id="1826441">
+
+
+
+
+
+
+                            <p>2. do tempo de exposição do servidor aos agentes agressivos;</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos alinea">
+
+
+
+
+
+
+
+
+
+                        <span id="1826442">
+
+
+
+
+
+
+                            <p>d) os graus de insalubridade e de periculosidade, com os respectivos percentuais
+                                aplicáveis ao local ou à atividade examinados; e</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos alinea">
+
+
+
+
+
+
+
+
+
+                        <span id="1826443">
+
+
+
+
+
+
+                            <p>e) as medidas corretivas necessárias para eliminar ou neutralizar o risco, ou proteger
+                                contra seus efeitos.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826444">
+
+
+
+
+
+
+                            <p>§ 1º Se o laudo técnico não for emitido pelo servidor público a que se refere o inciso I
+                                do caput, a unidade local poderá contratar serviços de terceiros para sua emissão, desde
+                                que o emitente seja médico com especialização em medicina do trabalho ou engenheiro ou
+                                arquiteto com especialização em segurança do trabalho.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826445">
+
+
+
+
+
+
+                            <p>§ 2º Caberá ao dirigente da unidade local reavaliar os graus de riscos no mínimo a cada 3
+                                (três) anos e providenciar, em caso de alteração destes, novo laudo técnico.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826446">
+
+
+
+
+
+
+                            <p>§ 3º O servidor público a que se refere o inciso I do caput deve encontrar-se no
+                                exercício do cargo público e no uso de suas atribuições por ocasião da elaboração do
+                                laudo técnico.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826447">
+
+
+
+
+
+
+                            <p>§ 4º Caso a RFB celebre convênio específico para a elaboração do laudo técnico a que se
+                                refere o caput, o dirigente de unidade local deverá solicitá-lo à unidade conveniada.
+                            </p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826448">
+
+
+
+
+
+
+                            <p>Art. 5º Antes de efetuar o pagamento de adicionais de periculosidade e de insalubridade a
+                                autoridade pagadora deverá conferir a exatidão da portaria de localização ou de
+                                exercício do servidor, da portaria de concessão do adicional e do laudo técnico de que
+                                trata o art. 4º.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826449">
+
+
+
+
+
+
+                            <p>Parágrafo único. Para fins de pagamento do adicional, será observada a data da portaria
+                                publicada mais recentemente dentre as de localização e de concessão, para ambientes já
+                                periciados e declarados insalubres ou perigosos, que deverão ser publicadas no Boletim
+                                de Serviço da RFB.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826450">
+
+
+
+
+
+
+                            <p>Art. 6º O pagamento dos adicionais de que trata o art. 1º será suspenso quando cessar o
+                                risco, atestado por novo laudo, ou o servidor for afastado do local ou da atividade que
+                                deu origem à concessão.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826451">
+
+
+
+
+
+
+                            <p>Parágrafo único. Caso já ocorra pagamento dos adicionais a que se refere o art. 1º, o
+                                dirigente da unidade local deverá, no prazo de 30 (trinta) dias a contar da data de
+                                publicação desta Portaria, analisar a necessidade de emissão de novo laudo técnico, em
+                                conformidade com a legislação vigente, de modo a garantir que o documento reflita a
+                                realidade do ambiente de trabalho.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826452">
+
+
+
+
+
+
+                            <p>Art. 7º O dirigente de unidade local que identificar elementos, independentemente de
+                                estarem ou não materializados em laudo técnico, que possam caracterizar a exposição de
+                                servidores a ruído excessivo, a produtos químicos tóxicos, a agentes biológicos, a
+                                produtos inflamáveis ou explosivos ou a operações perigosas com energia elétrica, entre
+                                outras hipóteses previstas nas Normas Regulamentadoras nº 15 e nº 16, aprovadas pela
+                                Portaria MTE nº 3.214, de 1978, deverá providenciar, com vistas à mitigação dos riscos,
+                                em conformidade o art. 7º da Convenção 155 da Organização Internacional do Trabalho,
+                                promulgada pelo Decreto nº 1.254, de 29 de setembro de 1994:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1826453">
+
+
+
+
+
+
+                            <p>I - a identificação das atividades cuja realização não tenha que ocorrer em ambientes
+                                caracterizadores de insalubridade ou periculosidade; e</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1826454">
+
+
+
+
+
+
+                            <p>II - a realocação dos servidores que atuam nas atividades a que se refere o inciso I para
+                                ambientes não caracterizadores de insalubridade ou periculosidade.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826455">
+
+
+
+
+
+
+                            <p>§ 1º A realocação de que trata o inciso II do caput deverá ser realizada em até 30
+                                (trinta) dias da identificação dos elementos caracterizadores de insalubridade ou
+                                periculosidade.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+                        <span class="tachado" id="1826456">
+
+                            <p>§ 2º Na hipótese de a realocação de que trata o inciso II do caput não ser possível no
+                                âmbito dos referenciais orçamentários designados à unidade local, compete ao titular da
+                                unidade solicitar os recursos necessários, mediante justificação, à Superintendência
+                                Regional da Receita Federal do Brasil jurisdicionante, ficando o início do prazo de que
+                                trata o § 1º do caput condicionado à disponibilização dos referenciais orçamentários.
+                            </p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826456">
+
+
+
+
+
+
+                            <p>§ 2º Na hipótese de a realocação de que trata o inciso II do caput não ser possível em
+                                virtude de indisponibilidade de imóvel ou insuficiência dos referenciais orçamentários
+                                designados à unidade local, compete ao titular da unidade solicitar os recursos
+                                necessários, mediante justificação, à Superintendência Regional da Receita Federal do
+                                Brasil jurisdicionante, para priorização na distribuição dos recursos, ficando o início
+                                do prazo de que trata o § 1º do caput condicionado à disponibilização do imóvel ou dos
+                                referenciais orçamentários.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a id="anotacaoSegmentoDestinoDIV1826456-2"
+                            href="link.action?visao=anotado&idAto=92055#1889586">
+                            (Reda&#xE7;&#xE3;o dada pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+                        <span class="tachado" id="1826457">
+
+                            <p>§ 3º Em caso de unidade aduaneira, o dirigente da unidade local deverá providenciar, além
+                                do disposto nos incisos I e II do caput, avaliação do dimensionamento das equipes diante
+                                do quantitativo de servidores de que trata o art. 8º.</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826457">
+
+
+
+
+
+
+                            <p>§ 3º Compete ao dirigente das unidades listadas no Anexo Único providenciar, conforme o
+                                caso, além do disposto nos incisos I e II do caput, avaliação do dimensionamento das
+                                equipes diante do quantitativo de postos de trabalho de que trata o art. 8º-A.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a id="anotacaoSegmentoDestinoDIV1826457-2"
+                            href="link.action?visao=anotado&idAto=92055#1889587">
+                            (Reda&#xE7;&#xE3;o dada pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889723">
+
+
+
+
+
+
+                            <p>§ 4º Poderá ser constituída Comissão Especial pelo titular da unidade, com vistas a
+                                proceder ao disposto nos incisos I e II do caput deste artigo.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889723-1"
+                            href="link.action?visao=anotado&idAto=92055#1889588">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889724">
+
+
+
+
+
+
+                            <p>§ 5º A Superintendência Regional da Receita Federal do Brasil jurisdicionante deverá
+                                priorizar a realização de treinamentos a serem ofertados aos servidores pelo programa
+                                regional de capacitação, com vistas a mitigação dos riscos na unidade.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889724-1"
+                            href="link.action?visao=anotado&idAto=92055#1889589">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889725">
+
+
+
+
+
+
+                            <p>§ 6º A solicitação de priorização na distribuição dos recursos a que se referem os §§ 2º
+                                e 5º deverá ser remetida à Coordenação-Geral de Programação e Logística (Copol) pela
+                                Superintendência Regional da Receita Federal do Brasil jurisdicionante, no âmbito dos
+                                prazos do planejamento orçamentário da RFB de cada ano, para avaliação com vistas à
+                                inclusão no Projeto de Lei Orçamentária Anual para o exercício subsequente.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889725-1"
+                            href="link.action?visao=anotado&idAto=92055#1889590">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889726">
+
+
+
+
+
+
+                            <p>§ 7º Caberá ao dirigente da unidade local apresentar anualmente ao Superintendente da
+                                Receita Federal do Brasil da respectiva região fiscal relatório que contenha as medidas
+                                adotadas para mitigação dos riscos da unidade.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889726-1"
+                            href="link.action?visao=anotado&idAto=92055#1889591">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+                        <span class="tachado" id="1826458">
+
+                            <p>Art. 8º A Coordenação-Geral de Administração Aduaneira (Coana) deverá, no prazo de 60
+                                (sessenta) dias a contar da publicação desta Portaria, definir o quantitativo de
+                                servidores por unidade aduaneira, de observância obrigatória, de modo a padronizar as
+                                equipes que atuam em portos, aeroportos e pontos de fronteira.</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1826458-1"
+                            href="link.action?visao=anotado&idAto=92055#1889603">
+                            (Revogado(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+                        <span class="tachado" id="1826459">
+
+                            <p>§ 1º O levantamento a que se refere o caput deverá conter:</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1826459-1"
+                            href="link.action?visao=anotado&idAto=92055#1889603">
+                            (Revogado(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+                        <span class="tachado" id="1826460">
+
+                            <p>I - a definição de critérios objetivos para dimensionamento de equipes;</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1826460-1"
+                            href="link.action?visao=anotado&idAto=92055#1889603">
+                            (Revogado(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+                        <span class="tachado" id="1826461">
+
+                            <p>II - o volume de trabalho sob responsabilidade de cada unidade aduaneira; e</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1826461-1"
+                            href="link.action?visao=anotado&idAto=92055#1889603">
+                            (Revogado(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+                        <span class="tachado" id="1826462">
+
+                            <p>III - as quantidades mínima e máxima de servidores, por cargo e horário de trabalho em
+                                cada unidade aduaneira.</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1826462-1"
+                            href="link.action?visao=anotado&idAto=92055#1889603">
+                            (Revogado(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+                        <span class="tachado" id="1826463">
+
+                            <p>§ 2º A definição do quantitativo de servidores a que se refere o caput deverá resultar na
+                                mitigação dos riscos e na redução do impacto orçamentário de eventuais adicionais
+                                decorrentes.</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1826463-1"
+                            href="link.action?visao=anotado&idAto=92055#1889603">
+                            (Revogado(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos nao identificad">
+
+
+
+
+
+
+
+
+
+                        <span id="1889727">
+
+
+
+
+
+
+                            <p>Art. 8º-A. Para fins do disposto nesta Portaria deverão ser observados os quantitativos
+                                máximos de postos de trabalho em atividades aduaneiras em cada unidade constante do
+                                Anexo Único, que contempla, inclusive, a chefia das áreas.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889727-1"
+                            href="link.action?visao=anotado&idAto=92055#1889592">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889728">
+
+
+
+
+
+
+                            <p>§ 1º O titular da unidade poderá realizar eventuais adequações necessárias na
+                                distribuição de servidores entre os processos de trabalho, desde que observado o limite
+                                máximo total constante do Anexo Único.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889728-1"
+                            href="link.action?visao=anotado&idAto=92055#1889593">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889729">
+
+
+
+
+
+
+                            <p>§ 2º Em caso de unidades não contempladas no Anexo Único, os processos eletrônicos que
+                                tenham por objeto a concessão de adicionais de insalubridade e periculosidade aos
+                                servidores de que trata esta Portaria deverão, previamente à concessão, ser encaminhados
+                                às áreas gestoras dos processos de trabalho envolvidos, devidamente instruídos, para
+                                aprovação do dimensionamento das equipes.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889729-1"
+                            href="link.action?visao=anotado&idAto=92055#1889594">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889730">
+
+
+
+
+
+
+                            <p>§ 3º A observância do dimensionamento a que se refere o caput não garante ao servidor em
+                                exercício nas unidades/equipes o direito à percepção dos adicionais de insalubridade e
+                                periculosidade, cuja concessão condiciona-se ao cumprimento dos demais requisitos desta
+                                Portaria e da Orientação Normativa SEGRT/MP nº 4, de 2017.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889730-1"
+                            href="link.action?visao=anotado&idAto=92055#1889595">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889731">
+
+
+
+
+
+
+                            <p>§ 4º As atividades aduaneiras a que se refere o caput são aquelas vinculadas aos
+                                seguintes processos de trabalho:</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889731-1"
+                            href="link.action?visao=anotado&idAto=92055#1889596">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1889732">
+
+
+
+
+
+
+                            <p>I – Despacho aduaneiro – importação/exportação/trânsito;</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889732-1"
+                            href="link.action?visao=anotado&idAto=92055#1889597">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1889733">
+
+
+
+
+
+
+                            <p>II – Vigilância e Repressão em Zona Primária; e</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889733-1"
+                            href="link.action?visao=anotado&idAto=92055#1889598">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos inciso">
+
+
+
+
+
+
+
+
+
+                        <span id="1889734">
+
+
+
+
+
+
+                            <p>III – Atendimento e Fiscalização de Bens de Viajantes.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889734-1"
+                            href="link.action?visao=anotado&idAto=92055#1889599">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos nao identificad">
+
+
+
+
+
+
+
+
+
+                        <span id="1889735">
+
+
+
+
+
+
+                            <p>Art. 8º-B. A Superintendência Regional da Receita Federal do Brasil jurisdicionante
+                                deverá adotar os procedimentos necessários à observância do dimensionamento constante do
+                                Anexo Único, inclusive mediante realocação do corpo funcional.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889735-1"
+                            href="link.action?visao=anotado&idAto=92055#1889600">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+                        <span class="tachado" id="1889736">
+
+                            <p>Parágrafo único. O titular da unidade poderá, até 31 de dezembro de 2018, respeitado o
+                                limite máximo total de servidores, realizar eventuais adequações na distribuição dos
+                                cargos por equipes elencadas no Anexo Único, desde que observadas as atribuições legais
+                                dos cargos.</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889736-1"
+                            href="link.action?visao=anotado&idAto=92055#1889601">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos nao identificad">
+
+
+
+
+
+
+
+
+
+                        <span id="1889736">
+
+
+
+
+
+
+                            <p>§ 1º O titular da unidade poderá, até 31 de dezembro de 2018, respeitado o limite máximo
+                                total de servidores, realizar eventuais adequações na distribuição dos cargos por
+                                equipes elencadas no Anexo Único, desde que observadas as atribuições legais dos cargos.
+                            </p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a id="anotacaoSegmentoDestinoDIV1889736-2"
+                            href="link.action?visao=anotado&idAto=97508#1951983">
+                            (Reda&#xE7;&#xE3;o dada pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            2040,
+                            de
+                            20 de dezembro de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+                        <span class="tachado" id="1952251">
+
+                            <p>§ 2º O prazo previsto no § 1º poderá ser estendido até 30 de junho de 2019, em caso de a
+                                Superintendência Regional da Receita Federal do Brasil manifestar a intenção de
+                                apresentar plano de realocação dos cargos, com vistas ao atendimento do previsto no
+                                Anexo Único.</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1952251-1"
+                            href="link.action?visao=anotado&idAto=97508#1951984">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            2040,
+                            de
+                            20 de dezembro de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+                        <span class="tachado" id="1952251">
+
+                            <p>§ 2º O prazo previsto no §1º poderá ser estendido até 31 de dezembro de 2019, em caso de
+                                a Superintendência Regional da Receita Federal do Brasil manifestar a intenção de
+                                apresentar plano de realocação dos cargos, com vistas ao atendimento do previsto no
+                                Anexo Único.</p>
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1952251-2-60" class=""
+                            href="link.action?visao=anotado&idAto=102489#2004198">
+                            (Reda&#xE7;&#xE3;o dada pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            1174,
+                            de
+                            08 de julho de 2019)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos nao identificad">
+
+
+
+
+
+
+
+
+
+                        <span id="1952251">
+
+
+
+
+
+
+                            <p>§2º O prazo previsto no §1º poderá ser estendido até 31 de dezembro de 2020, em caso de a
+                                Superintendência Regional da Receita Federal do Brasil manifestar a intenção de
+                                apresentar plano de realocação dos cargos, com vistas ao atendimento do previsto no
+                                Anexo Único.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a id="anotacaoSegmentoDestinoDIV1952251-3"
+                            href="link.action?visao=anotado&idAto=105908#2080821">
+                            (Reda&#xE7;&#xE3;o dada pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            2304,
+                            de
+                            31 de dezembro de 2019)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos paragrafo">
+
+
+
+
+
+
+
+
+
+                        <span id="1952252">
+
+
+
+
+
+
+                            <p>§ 3º A manifestação, bem como o plano de que trata o § 2º, deverão ser apresentados à
+                                Coordenação-Geral de Gestão de Pessoas (Cogep) até 31 de dezembro de 2018 e 31 de
+                                janeiro de 2019, respectivamente.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1952252-1"
+                            href="link.action?visao=anotado&idAto=97508#1951985">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            2040,
+                            de
+                            20 de dezembro de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826464">
+
+
+
+
+
+
+                            <p>Art. 9º Respondem nas esferas administrativa, civil e penal os peritos e dirigentes que
+                                concederem ou autorizarem o pagamento de adicionais em desacordo com a legislação
+                                vigente, com a Orientação Normativa SEGRT/MP nº 4, de 2017, e com o disposto nesta
+                                Portaria.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826465">
+
+
+
+
+
+
+                            <p>Art. 10. Fica a Coordenação-Geral de Gestão de Pessoas (Cogep) autorizada a expedir
+                                normas complementares a esta Portaria.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826466">
+
+
+
+
+
+
+                            <p>Art. 11. Esta Portaria entra em vigor na data de sua publicação no Diário Oficial da
+                                União.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos artigo">
+
+
+
+
+
+
+
+
+
+                        <span id="1826467">
+
+
+
+
+
+
+                            <p>Art. 12. Fica revogada a Portaria RFB nº 173, de 14 de fevereiro de 2017.</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+                        <a href="javascript:showHideOrigem('anotacaoSegmentoOrigemDIV1826467-1');">
+                            <img class="anotacaoOrigem" src="imagens/link_go_16x16A.png" border="0"
+                                title="Links para os atos mencionados" />
+                        </a>
+                        <div class="tright" id="anotacaoSegmentoOrigemDIV1826467-1" style="display:none">
+
+
+                            <a href="link.action?visao=anotado&idAto=80506#1696912">
+                                (Portaria
+
+                                RFB
+
+                                n&ordm;
+                                173,
+                                de
+                                14/02/17
+                                -
+                                <span class="textoIntegraReduzidoSegmento">
+                                    DISCIPLINA A CONCESSÃO DE ADICIONAIS DE EXERC
+                                </span>
+                                -
+                                Revoga&#xE7;&#xE3;o)
+                            </a><br />
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos fecho">
+
+
+
+
+
+
+
+
+
+                        <span id="1826468">
+
+
+
+
+
+
+                            <p>JORGE ANTONIO DEHER RACHID</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos titulo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889737">
+
+
+
+
+
+
+                            <p>ANEXO ÚNICO</p>
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=0"></a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889737-1"
+                            href="link.action?visao=anotado&idAto=92055#1889606">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="divSegmentos anexo">
+
+
+
+
+
+
+
+
+
+                        <span id="1889722">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="anexoOutros.action?idArquivoBinario=48332">Anexo &#xDA;nico.pdf</a>
+
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889722-1"
+                            href="link.action?visao=anotado&idAto=92055#1889721">
+                            (Inclu&#xED;do(a) pelo(a)
+                            Portaria
+
+                            RFB
+
+                            n&ordm;
+                            723,
+                            de
+                            11 de maio de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        &nbsp;
+                        <a id="anotacaoSegmentoDestinoDIV1889722-1"
+                            href="link.action?visao=anotado&idAto=94066#1913321">
+                            (Vide
+                            Portaria
+
+                            ALF/FOR
+
+                            n&ordm;
+                            39,
+                            de
+                            09 de agosto de 2018)
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <div class="avisoSijut">*Este texto não substitui o publicado oficialmente.</div>
+
+            </form>
+        </div>
+
+        <div class="irtopo">
+            <a href="#divPrincipal" class="upArrow" title="ir topo"></a>
+        </div>
+
+        <!-- 2012-06-27 -->
+
+
+        <script src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+
+    </div><!-- FIM: divPrincipal -->
+</body>
+
+</html>
